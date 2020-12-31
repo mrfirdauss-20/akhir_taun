@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="https://www.itb.ac.id/favicon.ico">
 
     <link rel="stylesheet" href="style.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Coba-Coba</title>
 </head>
 
 <body>
@@ -21,10 +21,10 @@
         <h2>Akhir Taun,</h2>
         <p>Sabi dong Sampein hiya hiya, untuk risqi:</p>
     </div>
-            <div class="column">
-                <div class="card">
-                        <div class="container">
-                <form id="gform" method="POST" action="https://script.google.com/a/macros/std.stei.itb.ac.id/s/AKfycby8te7NMS3F3EVfjQYi-HN-uUJB_598u9EKishMjoDEG6GTkxCA/exec">
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <form id="submit-form" action="">
                     <label for="fname">Nama</label>
                     <input type="text" id="fname" name="name" placeholder="Dengan Siapa??">
                     <label for="subject">Pesan</label>
@@ -32,24 +32,24 @@
                         style="height:170px"></textarea>
                     <input type="submit" value="Submit">
                 </form>
-                </div>
-
             </div>
+
+        </div>
     </div>
     <script>
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url: "",
+                url: "https://script.google.com/a/macros/std.stei.itb.ac.id/s/AKfycby8te7NMS3F3EVfjQYi-HN-uUJB_598u9EKishMjoDEG6GTkxCA/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 success: function (response) {
-                    alert("Form submitted successfully")
+                    alert("Terima Kasih atas Pesan Anda, See Yaa <3")
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
                 error: function (err) {
-                    alert("Something Error")
+                    alert("Haduh Keknya eror deehhh, coba lagi yuk")
 
                 }
             })
@@ -58,7 +58,8 @@
     <div style="display:none;" id="thankyou_message">
         <h2 class="judul">Terima Kasih</h2>
     </div>
-    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
