@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+ .column {
+    width: 35% !important;
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.card {
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.15);
+  margin: 8px;
+  height: 350px;
+  border-radius: 10px;
+  display: block;
+  background: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.judul{ 
+margin-left: 0;
+margin-right: 0;
+text-align: center !important;
+width: 100% !important;
+font-weight: bold !important;
+font-family: 'Open Sans' sans-serif !important;
+font-style: normal;
+font-size: 36px;
+line-height: 49px;
+color: #000000;
+}
+
+
+  @media (max-width: 768px){
+    .card-holder{
+      grid-template-columns: 1fr 6fr 1fr;
+    }
+    .card{
+      padding: 20px;
+    }
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
