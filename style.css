@@ -1,14 +1,19 @@
 * {
     box-sizing: border-box;
   }
-  
+ body {
+  background-image: url('https://image.freepik.com/free-vector/abstract-background-web-neon-box-pattern-led-screens-projection-technology_115579-886.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
   /* Style inputs */
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     resize: vertical;
   }
   
@@ -37,6 +42,7 @@
     margin: 0 auto;
     position: relative;
     top: 10px;
+    height: auto;
     margin-bottom: 16px;
     padding: 0 8px;
   }
@@ -50,7 +56,7 @@
 .card {
   box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.15);
   margin: 8px;
-  height: 350px;
+  height: auto;
   border-radius: 10px;
   display: block;
   background: #FFFFFF;
